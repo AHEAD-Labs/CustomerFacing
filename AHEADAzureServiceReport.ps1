@@ -64,7 +64,7 @@ $desktopPath = Get-DesktopPath -date $date
 try { Remove-Item -Path $desktopPath -Confirm } catch { Write-Host "File $($desktopPath) does not currently exist." }
 
 ## Setting this flag to true will ONLY include Azure Resource Types & Locations, Names, guids and other potentially identifiable information are excluded.
-$sanitizedData = $True ## Values should be either "$True" or "$False"
+$sanitizedData = $False ## Values should be either "$True" or "$False"
 
 
 
